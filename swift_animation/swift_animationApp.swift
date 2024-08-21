@@ -11,7 +11,6 @@ import SwiftUI
 struct swift_animationApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
             CirclesView()
         }
     }
