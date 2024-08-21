@@ -31,11 +31,12 @@ struct CirclesView: View {
                 }
             }.rotationEffect(.degrees(rotateInOut ? 90 : 0))
                 .scaleEffect(scaleInOut ? 1 : 0.25)
-                .animation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1 / 8))
                 .onAppear {
-                    moveInOut.toggle()
-                    scaleInOut.toggle()
-                    rotateInOut.toggle()
+                    withAnimation(Animation.easeInOut.repeatForever(autoreverses: true).speed(1 / 8)) {
+                        moveInOut.toggle()
+                        scaleInOut.toggle()
+                        rotateInOut.toggle()
+                    }
                 }
         }
         .enableInjection()
