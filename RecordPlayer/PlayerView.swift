@@ -5,9 +5,12 @@
 //  Created by OttoLin on 2024/8/21.
 //
 
+import AVFoundation
+import Foundation
 import SwiftUI
 
 struct PlayerView: View {
+    @State private var audioPlayer: AVAudioPlayer?
     @State private var rotateRecord = false
     @State private var rotateArm = false
     @State private var shouldAnimate = false
@@ -47,6 +50,17 @@ struct PlayerView: View {
             }
         }
     }
+
+    private func playSound(sound: String, type: String) {
+        if let path = Bundle.main.path(forResource: sound, ofType: type) {
+            do {
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path))
+                audioPlayer?.play()
+            } catch {
+                print("Could not find and play the sound file")
+            }
+        }
+    }
 }
 
 struct RecordPlayerBox: View {
@@ -78,7 +92,7 @@ struct ArmView: View {
             .frame(width: 150, height: 150)
             .shadow(color: .gray, radius: 2, x: 0, y: 0)
             .rotationEffect(.degrees(-35), anchor: .topTrailing)
-            .rotationEffect(.degrees(rotateArm ? 12 : 0), anchor: .topTrailing)
+            .rotationEffect(.degrees(rotateArm ? 10 : 0), anchor: .topTrailing)
             .offset(x: 70, y: -250)
             .animation(Animation.linear(duration: 2), value: rotateArm)
     }

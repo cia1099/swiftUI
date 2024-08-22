@@ -18,7 +18,6 @@
 		271B776A2C75C3A70021A1D1 /* RecordPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271B77692C75C3A70021A1D1 /* RecordPlayer.xcassets */; };
 		271B77B72C75C78C0021A1D1 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B77B62C75C78C0021A1D1 /* PlayerView.swift */; };
 		273777F62C76E8C6005437C3 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 273777F52C76E8C6005437C3 /* music.m4a */; };
-		273777F82C76FC98005437C3 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273777F72C76FC98005437C3 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		271B77692C75C3A70021A1D1 /* RecordPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RecordPlayer.xcassets; sourceTree = "<group>"; };
 		271B77B62C75C78C0021A1D1 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		273777F52C76E8C6005437C3 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.m4a; path = Resources/music.m4a; sourceTree = "<group>"; };
-		273777F72C76FC98005437C3 /* PlaySound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +96,6 @@
 		271B77682C75C34D0021A1D1 /* RecordPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				273777F72C76FC98005437C3 /* PlaySound.swift */,
 				271B77692C75C3A70021A1D1 /* RecordPlayer.xcassets */,
 				271B77B62C75C78C0021A1D1 /* PlayerView.swift */,
 				273777F52C76E8C6005437C3 /* music.m4a */,
@@ -186,7 +183,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				273777F82C76FC98005437C3 /* PlaySound.swift in Sources */,
 				271B77432C7478C20021A1D1 /* CirclesView.swift in Sources */,
 				271B772F2C7454DE0021A1D1 /* GlobalImports.swift in Sources */,
 				271B771E2C744C290021A1D1 /* swift_animationApp.swift in Sources */,
