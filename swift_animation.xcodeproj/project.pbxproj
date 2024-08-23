@@ -18,6 +18,8 @@
 		271B776A2C75C3A70021A1D1 /* RecordPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 271B77692C75C3A70021A1D1 /* RecordPlayer.xcassets */; };
 		271B77B72C75C78C0021A1D1 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B77B62C75C78C0021A1D1 /* PlayerView.swift */; };
 		273777F62C76E8C6005437C3 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 273777F52C76E8C6005437C3 /* music.m4a */; };
+		273777FB2C7854D4005437C3 /* BreathFlower.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273777FA2C7854D4005437C3 /* BreathFlower.xcassets */; };
+		273777FD2C78564F005437C3 /* BreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273777FC2C78564F005437C3 /* BreathingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		271B77692C75C3A70021A1D1 /* RecordPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RecordPlayer.xcassets; sourceTree = "<group>"; };
 		271B77B62C75C78C0021A1D1 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		273777F52C76E8C6005437C3 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.m4a; path = Resources/music.m4a; sourceTree = "<group>"; };
+		273777FA2C7854D4005437C3 /* BreathFlower.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BreathFlower.xcassets; sourceTree = "<group>"; };
+		273777FC2C78564F005437C3 /* BreathingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 		271B77112C744C290021A1D1 = {
 			isa = PBXGroup;
 			children = (
+				273777F92C7854A2005437C3 /* Breathing Flower */,
 				271B77682C75C34D0021A1D1 /* RecordPlayer */,
 				271B77452C75B7FB0021A1D1 /* LICENSE */,
 				271B77462C75B7FB0021A1D1 /* README.md */,
@@ -101,6 +106,15 @@
 				273777F52C76E8C6005437C3 /* music.m4a */,
 			);
 			path = RecordPlayer;
+			sourceTree = "<group>";
+		};
+		273777F92C7854A2005437C3 /* Breathing Flower */ = {
+			isa = PBXGroup;
+			children = (
+				273777FA2C7854D4005437C3 /* BreathFlower.xcassets */,
+				273777FC2C78564F005437C3 /* BreathingView.swift */,
+			);
+			path = "Breathing Flower";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 				273777F62C76E8C6005437C3 /* music.m4a in Resources */,
 				271B77482C75B7FB0021A1D1 /* README.md in Resources */,
 				271B77222C744C2A0021A1D1 /* Assets.xcassets in Resources */,
+				273777FB2C7854D4005437C3 /* BreathFlower.xcassets in Resources */,
 				271B776A2C75C3A70021A1D1 /* RecordPlayer.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				271B77432C7478C20021A1D1 /* CirclesView.swift in Sources */,
+				273777FD2C78564F005437C3 /* BreathingView.swift in Sources */,
 				271B772F2C7454DE0021A1D1 /* GlobalImports.swift in Sources */,
 				271B771E2C744C290021A1D1 /* swift_animationApp.swift in Sources */,
 				271B77B72C75C78C0021A1D1 /* PlayerView.swift in Sources */,
