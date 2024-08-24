@@ -21,6 +21,8 @@ struct BreathingView: View {
             Image("winterNight").resizable().aspectRatio(contentMode: .fill)
                 .frame(width: 400, height: 900)
             ZStack {
+                SnowView()
+
                 // MARK: - ANIMATE TEXT LABELS
 
                 Group {
